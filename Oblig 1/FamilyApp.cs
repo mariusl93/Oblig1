@@ -8,11 +8,11 @@ namespace Oblig_1
 {
     public class FamilyApp
     {
-        public List<Person> People;
+        public List<Person> People; //En variabel som er en List med Person objekter inne i seg
 
-        public FamilyApp(params Person[] people)
+        public FamilyApp(params Person[] people) //Når det er parameter i en metode, så er det convention at du bruker liten bokstav.
         {
-            People = new List<Person>(people);
+            People = new List<Person>(people); //people kunne like gjerne vært person, bare for forvirring
         }
 
         public string WelcomeMessage = "Dette er slektstrær app";
